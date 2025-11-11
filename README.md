@@ -1,49 +1,66 @@
-# 🐼 Exercícios de Pandas — Fixação de Conceitos  
+# 🐼 **Estudos e Exercícios com Pandas — Fixação de Conceitos**
 
-## 📘 Descrição  
-Este projeto reúne **dois exercícios práticos com Pandas**, desenvolvidos com o objetivo de **fixar os principais conceitos e comandos de manipulação e análise de dados**.  
-
-Foram utilizados dois conjuntos de dados:  
-- 🧾 **Insurance Dataset** — dados sobre seguros de saúde (charges, idade, IMC, fumo, etc.)  
-- 🔥 **Incêndios no Brasil** — dados sobre a ocorrência de incêndios em diferentes estados e meses  
+## 📘 **Descrição**
+Projeto criado para **fixar conceitos essenciais e intermediários da biblioteca Pandas**, explorando leitura, manipulação e análise de dados em **Python**.  
+Os exercícios utilizam diferentes **datasets reais e simulados**, abordando desde operações básicas até análises mais completas de vendas, regiões e desempenho.
 
 ---
 
-## 🧠 Conceitos Praticados  
-- Leitura e exploração de dados com `head()`, `info()`, `describe()` e `value_counts()`  
-- Filtragem de dados com `loc` e `iloc`  
+## 🧠 **Conteúdo Estudado**
+
+### 📍 **Parte 1 Fundamentos do Pandas**
+- Introdução à biblioteca e uso de *alias* (`import pandas as pd`)  
+- Estruturas de dados: `Series` e `DataFrame`  
+- Leitura e exploração de dados: `head()`, `info()`, `describe()`, `value_counts()`  
+- Seleção e filtragem: `loc[]`, `iloc[]`, e condições lógicas  
+- Criação e modificação de colunas com `np.where()`, `map()` e `apply()`  
+- Estatísticas descritivas: médias, medianas, proporções e desvio padrão  
 - Agrupamentos e agregações com `groupby()`  
-- Criação de novas colunas com condições (`np.where()` e `map()`)  
-- Cálculo de médias, somas, desvios e proporções  
-- Uso de **funções lambda**  
-- Comparações entre grupos e categorias (ex: fumantes x não fumantes, regiões, faixas etárias)  
+- Limpeza e manipulação: `drop()`, `rename()`, `isna()`  
 
 ---
 
-## 📊 Principais Resultados  
-
-### 🧾 Insurance Dataset  
-- Fumantes apresentaram **média de cobrança bem superior** aos não fumantes.  
-- As mulheres **não fumantes** tiveram média de cobrança maior que os homens **não fumantes**, mas o contrário ocorreu entre fumantes.  
-- A média do **IMC (BMI)** entre fumantes e não fumantes é semelhante, mostrando leve assimetria.  
-- Pessoas com **filhos** apresentaram **média de cobrança um pouco maior** em comparação a quem não tem.  
-
-### 🔥 Incêndios no Brasil  
-- A **Região Sudeste** apresentou **mais incêndios** que a **Região Centro-Oeste**, com:  
-  - Sudeste → **140.303,32 incêndios**  
-  - Centro-Oeste → **137.502,55 incêndios**  
-- Foram criadas colunas (`regiao_sudeste` e `regiao_centro_oeste`) para identificar os estados de cada região.  
-- Também foram analisadas as **médias mensais** e o **desvio padrão de incêndios** por estado.  
+### 📍 **Parte 2 — Manipulação e Análise Avançada**
+- Combinação de tabelas com `merge()` (tipos: `left`, `right`, `inner`, `outer`)  
+- Criação de tabelas dinâmicas com `pivot_table()`  
+- Verificação e tratamento de nulos com `isna()`, `fillna()`  
+- Contagem e listagem de valores únicos com `nunique()` e `unique()`  
+- Agrupamentos múltiplos e cálculos de métricas personalizadas  
+- Análises de **receita, quantidade e desempenho por marca, produto e estado**  
+- Integração de múltiplos *DataFrames*: `orders`, `order_items`, `stores`, `brands`, `products`  
 
 ---
 
-## 🛠️ Tecnologias Utilizadas  
-- **Python 3**  
-- **Pandas**  
-- **NumPy**  
-- **Jupyter Notebook**  
+## 🧾 **Datasets Utilizados**
+1. **Insurance Dataset** - informações sobre seguros de saúde (idade, IMC, fumo, filhos, custos, etc.)  
+2. **Incêndios no Brasil** - registros mensais de incêndios por estado  
+3. **Dataset de Vendas** - dados de pedidos, produtos, marcas, lojas, clientes e etc.
+4. **Dataset de Estudante** - informações sobre estudantes
+5. **Dataset de Banco** - informações sobre cliente que aceita e não aceita a proposta. (loan, y(sim, não), return, defaul, e etc)
 
 ---
 
-## 📂 Estrutura do Projeto  
+## 💪 **Exercícios e Aplicações**
+- Tratamento e verificação de **valores ausentes**  
+- Criação de colunas condicionais e classificações de risco  
+- Comparações entre **grupos e categorias** (ex: fumantes x não fumantes)  
+- Consolidação de dados via `merge()`  
+- Cruzamento de informações com `pivot_table()`  
+- Cálculo e análise de **receita média e total por estado e marca**  
+
+---
+
+## 📊 **Principais Resultados**
+- Fumantes apresentaram **custos médios mais altos** em seguros.  
+- A **Região Sudeste** registrou **mais incêndios** que a **Centro-Oeste**.  
+- Diferenças significativas de **receita e desempenho entre estados**, indicando oportunidades de **expansão ou otimização**.  
+
+---
+
+## 🛠️ **Tecnologias Utilizadas**
+🐍 **Python 3**  
+📦 **Pandas**  
+🔢 **NumPy**  
+📓 **Jupyter Notebook**
+
 

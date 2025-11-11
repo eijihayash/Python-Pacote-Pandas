@@ -1,4 +1,4 @@
-# 🐼 **Estudos e Exercícios com Pandas — Fixação de Conceitos**
+# 🐼 **Estudos e Exercícios com Pandas / Fixação de Conceitos**
 
 ## 📘 **Descrição**
 Projeto criado para **fixar conceitos essenciais e intermediários da biblioteca Pandas**, explorando leitura, manipulação e análise de dados em **Python**.  
